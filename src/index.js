@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'semantic-ui-css/semantic.min.css'
 import './index.sass';
 
 import HelloSect from './components/HelloSect/HelloSect'
+import AboutMe from './components/AboutMe/AboutMe'
+import MoreQuestions from './components/MoreQuestions/MoreQuestions'
 
 import {Dots} from 'react-preloaders';
 
@@ -12,7 +15,11 @@ import {Dots} from 'react-preloaders';
 class App extends React.Component{
     render(){
         return(
-            <HelloSect />
+            <div>
+                <HelloSect /> 
+                <AboutMe />
+                <MoreQuestions/>
+            </div>
         )
     }
 }

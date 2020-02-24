@@ -1,5 +1,32 @@
-@import ./colors.sass
+$color1: #73A8AF
+$color2: #A0CAB5
+$color3: #CCDFCC
+$color4: #ECEEF1
+$color5: #F38A8A
 
 body  
-  background-color: $color1
+  background-color: $color2
   margin: 0
+
+section
+  height: 100vh
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  border-bottom: 1px solid black
+
+.payload
+  height: 100%
+  width: 100%
+  margin: 2.5em 1em
+  max-width: 120rem
+  vertical-align: center
+  background-color: $color5
+  display: flex
+  align-items: center
+
+.headerPadding
+  transform: translatex(-.5em)
