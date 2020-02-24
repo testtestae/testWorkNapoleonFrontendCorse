@@ -1,6 +1,5 @@
 import React from 'react'
 import { Header, Container } from 'semantic-ui-react'
-import './MoreQuestions.sass'
 
 import MyPhoneButton from '../../elements/myPhoneButton/MyPhoneButton'
 import SocialNetworks from '../../elements/SocialNetworks/SocialNetworks'

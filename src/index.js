@@ -8,14 +8,7 @@ import Sect from './components/Sect/Sect';
 import HelloSect from './components/HelloSect/HelloSect';
 import MoreQuestions from './components/MoreQuestions/MoreQuestions';
 
-import MyPhoneButton from './elements/myPhoneButton/MyPhoneButton'
-import SocialNetworks from './elements/SocialNetworks/SocialNetworks'
-
-
 import {Dots} from 'react-preloaders';
-
-//import App from './App';
-//import * as serviceWorker from './serviceWorker';
 
 class App extends React.Component{
 
@@ -27,13 +20,8 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <Sect title="Обо мне" iconName="user" payloadText={this.content.aboutMe}/>
-                <Sect title="Еще вопросы?" iconName="user" payloadText={this.content.questions}>
-                    <MyPhoneButton/>
-                    <SocialNetworks/>
-                </Sect>
-
                 <HelloSect /> 
+                <Sect title="Обо мне" iconName="user" payloadText={this.content.aboutMe}/>
                 <MoreQuestions/>
             </div>
         )

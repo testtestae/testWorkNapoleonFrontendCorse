@@ -2,27 +2,6 @@ import React from 'react'
 import { Button, Icon} from 'semantic-ui-react'
 import './SocialNetworks.sass'
 
-function SocialNetworksList(props) {
-    const SNList = props.SNList;
-    const listItems = SNList.map((number) =>
-        <SocialNetwork SNInfo={number}/>
-    );
-    return (
-        <div>{listItems}</div>
-    )
-}
-
-function SocialNetwork(props) {
-    //const payloadList = props.SNInfo;
-    return(
-        <div>
-            Console.log(props.SNInfo)
-        </div>
-        
-    )
-}
-
-
 export default class SocialNetworks extends React.Component {
     SNList = [
         //[SocialNetworkName, colorName, iconName, link]
@@ -40,30 +19,29 @@ export default class SocialNetworks extends React.Component {
           
                 {/* <SocialNetworksList SNList={this.SNList}/>  */}
                 
-                <a href={this.SNList[0][3]} target="_blank">
+                <a href={this.SNList[0][3]} rel="noopener noreferrer" target="_blank">
                     <Button color='vk'>
                         <Icon name='vk'/>VK
                     </Button>
                 </a>
 
-                <Button 
-                    color='instagram'
-                    {/* onClick = "{document.location=this.links.tg}" */}
-                >
-                    <Icon name='telegram plane' /> Telegram
-                </Button>
-                <Button 
-                    color='linkedin'
-                    onClick = "{document.location=this.links.linkedIn}"
-                >
-                    <Icon name='linkedin' /> LinkedIn
-                </Button>
-                <Button 
-                    color='youtube'
-                    onClick = "{document.location=this.links.mail}"
-                >
-                    <Icon name='mail' /> GMail
-                </Button> 
+                <a href={this.SNList[1][3]} rel="noopener noreferrer" target="_blank">
+                    <Button color='instagram'>
+                        <Icon name='telegram plane' /> Telegram
+                    </Button>
+                </a>
+                    
+                <a href={this.SNList[2][3]} rel="noopener noreferrer" target="_blank">
+                    <Button color='linkedin'>
+                        <Icon name='linkedin' /> LinkedIn
+                    </Button>
+                </a>
+                <a href={this.SNList[3][3]} rel="noopener noreferrer" target="_blank">
+                    <Button color='youtube'>
+                        <Icon name='mail' /> GMail
+                    </Button> 
+                </a>
+                
                 
             </div>
 
