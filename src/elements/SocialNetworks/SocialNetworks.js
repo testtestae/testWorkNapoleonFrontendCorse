@@ -38,35 +38,35 @@ export default class SocialNetworks extends React.Component {
 
             <div className='SocialNetworks'>
           
-                <SocialNetworksList SNList={this.SNList}/>
+                {/* <SocialNetworksList SNList={this.SNList}/>  */}
                 
-            {/*<a href={this.links.vk}>
+                <a href={this.SNList[0][3]} target="_blank">
+                    <Button color='vk'>
+                        <Icon name='vk'/>VK
+                    </Button>
+                </a>
+
                 <Button 
-                color='vk' 
+                    color='instagram'
+                    {/* onClick = "{document.location=this.links.tg}" */}
                 >
-                    <Icon name='vk' /> VK
+                    <Icon name='telegram plane' /> Telegram
+                </Button>
+                <Button 
+                    color='linkedin'
+                    onClick = "{document.location=this.links.linkedIn}"
+                >
+                    <Icon name='linkedin' /> LinkedIn
+                </Button>
+                <Button 
+                    color='youtube'
+                    onClick = "{document.location=this.links.mail}"
+                >
+                    <Icon name='mail' /> GMail
+                </Button> 
                 
-            </Button></a>
-            <Button 
-                color='instagram'
-                onClick = "{document.location=this.links.tg}"
-            >
-                <Icon name='telegram plane' /> Telegram
-            </Button>
-            <Button 
-                color='linkedin'
-                onClick = "{document.location=this.links.linkedIn}"
-            >
-                <Icon name='linkedin' /> LinkedIn
-            </Button>
-            <Button 
-                color='youtube'
-                onClick = "{document.location=this.links.mail}"
-            >
-                <Icon name='mail' /> GMail
-            </Button> 
-            */}
             </div>
+
             
         )
     }
