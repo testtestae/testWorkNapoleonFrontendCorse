@@ -25,7 +25,7 @@ export default class MyPhoneButton extends React.Component {
 
   render(){
     return (
-      <div>
+      <div className='MyPhoneButton'>
         <Button 
           color='teal'
           content='показать телефон'

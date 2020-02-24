@@ -3,6 +3,7 @@ import { Header, Container } from 'semantic-ui-react'
 import './MoreQuestions.sass'
 
 import MyPhoneButton from '../../elements/myPhoneButton/MyPhoneButton'
+import SocialNetworks from '../../elements/SocialNetworks/SocialNetworks'
 
 export default class MoreQuestions extends React.Component{
     render(){
@@ -17,8 +18,11 @@ export default class MoreQuestions extends React.Component{
                             content='Еще вопросы?'
                             className='headerPadding'
                         />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem reprehenderit hic unde non quaerat? Odio earum fugiat sapiente eius mollitia nisi, modi dignissimos maiores velit at doloribus laboriosam atque itaque.</p>
+                        <p>
+                            Я открыт для общения! <br/> Мне можно позвонить на  сотовый, связаться через ВК, Телеграм, LinkedIn или электронную почту. 
+                        </p><br/>
                         <MyPhoneButton/>
+                        <SocialNetworks/>
                     </Container>
                 </div>
             </section>
