@@ -1,8 +1,8 @@
 import React from 'react'
 import { Header, Container } from 'semantic-ui-react'
-import MyPhoneButton from './MoreQuestions.sass'
+import './MoreQuestions.sass'
 
-import '../../elements/myPhoneButton/MyPhoneButton'
+import MyPhoneButton from '../../elements/myPhoneButton/MyPhoneButton'
 
 export default class MoreQuestions extends React.Component{
     render(){
