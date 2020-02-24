@@ -4,9 +4,9 @@ import 'semantic-ui-css/semantic.min.css'
 import './index.sass';
 
 import Sect from './components/Sect/Sect';
-
 import HelloSect from './components/HelloSect/HelloSect';
 import MoreQuestions from './components/MoreQuestions/MoreQuestions';
+import MySkill from './components/MySkill/MySkill'
 
 import {Dots} from 'react-preloaders';
 
@@ -22,6 +22,7 @@ class App extends React.Component{
             <div>
                 <HelloSect /> 
                 <Sect title="Обо мне" iconName="user" payloadText={this.content.aboutMe}/>
+                <MySkill/>
                 <MoreQuestions/>
             </div>
         )
